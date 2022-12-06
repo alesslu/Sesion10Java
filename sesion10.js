@@ -29,7 +29,7 @@ class Alumno {
     //getter:obsequio
     get obsequio(){
         let prom = ((this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4))
-        if (this.prom>=17){
+        if (prom>=17){
             return "\nGanaste una mochila"
         }else {
             return "\nTe perdiste una mochila"
