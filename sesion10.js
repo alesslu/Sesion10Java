@@ -7,16 +7,18 @@ class Alumno {
         this.nota3 = nota3;
         this.nota4 = nota4;
     }
+    
     //Getter:promedio
+    
     get promedio(){
-        let prom = (this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4)
+        let prom = ((this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4))
         return "\nTu promedio es: "+ prom
 
     }
     //getter:condicion
     get condicion(){
-        let prom = (this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4)
-        if (this.prom<12){
+        let prom = ((this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4))
+        if (prom<12){
             return "\nEstas desaprobado"
         } else {
             return "\nEstas aprobado"
@@ -26,8 +28,8 @@ class Alumno {
 
     //getter:obsequio
     get obsequio(){
-        let prom = (this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4)
-        if (this.prom>17){
+        let prom = ((this.nota1*0.15)+(this.nota2*0.2)+(this.nota3*0.25)+(this.nota4*0.4))
+        if (this.prom>=17){
             return "\nGanaste una mochila"
         }else {
             return "\nTe perdiste una mochila"
@@ -46,3 +48,4 @@ let not4 = prompt ("Nota 4:")
 
 let alumnonew = new Alumno(id, alum, not1, not2, not3, not4)
 alert ("Hola "+alum+ alumnonew.promedio + alumnonew.condicion + alumnonew.obsequio)
+
